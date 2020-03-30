@@ -1,0 +1,10 @@
+{
+  "header_title": "React App avec Material-UI",
+  "see_twitter_profile": "Voir son profil Twitter",
+  "see_linkedin_profile": "Voir son profil LinkedIn",
+  "view_article": "Lire",
+  "image_alt_article_card": "Illustration de \"{{title}}\"",
+  "theme": "Thème",
+  "no_theme": "Aucun thème",
+  "no_author": "Oups ! L'auteur n'existe pas !"
+}
