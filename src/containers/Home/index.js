@@ -1,12 +1,11 @@
 import React, { useEffect, useState, Fragment } from 'react';
 import { fetchAllAuthors } from 'api/api';
 import { Link } from 'react-router-dom';
-import Backdrop from '@material-ui/core/Backdrop';
-import CircularProgress from '@material-ui/core/CircularProgress';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import useStyles from './styles';
+import LoaderFullPage from '../../components/LoaderFullPage';
 
 const Home = () => {
   const classes = useStyles();
@@ -25,11 +24,7 @@ const Home = () => {
 
   return (
     <Fragment>
-      {loading && (
-        <Backdrop className={classes.backdrop} open={loading}>
-          <CircularProgress color="inherit" />
-        </Backdrop>
-      )}
+      {loading && <LoaderFullPage loading={loading} />}
       <div className={classes.listContainer}>
         {authors.length > 0 && (
           <List component="nav" className={classes.list}>

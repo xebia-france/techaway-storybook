@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import Backdrop from '@material-ui/core/Backdrop';
-import CircularProgress from '@material-ui/core/CircularProgress';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
@@ -11,11 +9,13 @@ import AuthorUnit from 'components/AuthorUnit';
 import CardArticle from 'components/CardArticle';
 import { fetchDataByAuthorId } from 'api/api';
 import useStyles from './styles';
+import LoaderFullPage from '../../components/LoaderFullPage';
 
-const Author = () => {
+const Author = props => {
   const classes = useStyles();
   const { authorId } = useParams();
   const { t } = useTranslation();
+  const match = props?.match;
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -23,7 +23,8 @@ const Author = () => {
   const [currentArticles, setArticles] = useState(null);
 
   useEffect(() => {
-    fetchDataByAuthorId(parseInt(authorId, 10))
+    const id = parseInt(authorId || match?.params?.id, 10);
+    fetchDataByAuthorId(id)
       .then(({ author, articles }) => {
         setAuthor(author);
         setArticles(articles);
@@ -32,15 +33,11 @@ const Author = () => {
       .finally(() => {
         setLoading(false);
       });
-  }, [authorId]);
+  }, [authorId, match]);
 
   return (
     <main>
-      {loading && (
-        <Backdrop className={classes.backdrop} open={loading}>
-          <CircularProgress color="inherit" />
-        </Backdrop>
-      )}
+      {loading && <LoaderFullPage loading={loading} />}
       {error && (
         <div className={classes.error}>
           <Paper>

@@ -50,7 +50,7 @@ const VARIANTS = {
   INHERIT: 'inherit',
 };
 
-export const Default = () => {
+export const WithKnobs = () => {
   const align = select('align', ALIGNMENTS, ALIGNMENTS.INHERIT);
   const color = select('color', COLORS, COLORS.INITIAL);
   const display = select('display', DISPLAYS, DISPLAYS.INITIAL);

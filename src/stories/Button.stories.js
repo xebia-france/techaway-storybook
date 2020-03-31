@@ -29,7 +29,7 @@ const VARIANTS = {
   CONTAINED: 'contained',
 };
 
-export const Default = () => {
+export const WithKnobs = () => {
   const color = select('color', COLORS, COLORS.DEFAULT);
   const disabled = boolean('disabled', false);
   const disableElevation = boolean('disableElevation', false);

@@ -9,10 +9,6 @@ const useStyles = makeStyles(theme => ({
     paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(8),
   },
-  backdrop: {
-    zIndex: theme.zIndex.drawer + 1,
-    color: theme.palette.primary.contrastText,
-  },
   error: {
     display: 'flex',
     justifyContent: 'center',
