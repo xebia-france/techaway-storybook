@@ -5,5 +5,6 @@ module.exports = {
     "@storybook/addon-knobs",
     "@storybook/addon-actions",
     "storybook-addon-i18next/register",
+    "@storybook/addon-storysource",
   ],
 };
