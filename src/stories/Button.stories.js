@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import Memory from '@material-ui/icons/Memory';
 import { withKnobs, text, select, boolean } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
 
 export default {
   title: 'Material-UI/Button',
@@ -52,6 +53,7 @@ export const Default = () => {
       variant={variant}
       startIcon={withStartIcon && <Memory />}
       endIcon={withEndIcon && <Memory />}
+      onClick={action('button action click')}
     >
       {text('children text', 'Default')}
     </Button>
