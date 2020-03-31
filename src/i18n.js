@@ -16,3 +16,5 @@ i18n
     },
     debug: process.env.DEBUG === 'true',
   });
+
+export default i18n;
