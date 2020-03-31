@@ -23,12 +23,36 @@ The app:
 yarn start
 ```
 
+The Storybook:
+
+```sh
+yarn storybook
+```
+
+You could instead run the commands above concurrently by running:
+
+```sh
+yarn dev
+```
+
 ### Build
 
 The app:
 
 ```sh
 yarn build
+```
+
+The Storybook:
+
+```sh
+yarn build-storybook
+```
+
+You could instead run the commands above concurrently by running:
+
+```sh
+yarn prod
 ```
 
 ### Test
@@ -41,6 +65,8 @@ yarn test
 
 - [Create React App (CRA)](https://create-react-app.dev/)
 - [Material-UI](https://material-ui.com/)
+- [Storybook](https://storybook.js.org/)
 - [Jest](https://jestjs.io/)
+- [Concurrently](https://www.npmjs.com/package/concurrently)
 - [Commitizen](http://commitizen.github.io/cz-cli/)
 - [Husky](https://www.npmjs.com/package/husky)
