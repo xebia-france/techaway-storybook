@@ -9,5 +9,6 @@ module.exports = {
     "@storybook/addon-viewport",
     "@harelpls/storybook-addon-materialui",
     "@storybook/addon-links",
+    "@storybook/addon-docs",
   ],
 };

@@ -7,6 +7,9 @@ export default {
   title: 'React-App/components/CardArticle',
   component: CardArticle,
   decorators: [withKnobs],
+  parameters: {
+    componentSubtitle: 'Displays a card that represents an article',
+  },
 };
 
 export const Default = () => (
