@@ -1,8 +1,9 @@
 import React, { Suspense } from "react";
+import { addDecorator, addParameters } from "@storybook/react";
 import { withMuiTheme } from "@harelpls/storybook-addon-materialui";
 import { withI18next } from "storybook-addon-i18next";
 import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks";
-import { addDecorator, addParameters } from "@storybook/react";
+import { withA11y } from "@storybook/addon-a11y";
 import themes from "themes";
 import i18n from "i18n";
 import { languages } from "./utils";
@@ -29,6 +30,8 @@ addDecorator(
     None: null,
   })
 );
+
+addDecorator(withA11y);
 
 addParameters({
   docs: {
