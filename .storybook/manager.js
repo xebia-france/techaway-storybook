@@ -1,5 +1,5 @@
 import { addons } from "@storybook/addons";
-import { themes } from "@storybook/theming";
+import customTheme from "./customTheme";
 
 addons.setConfig({
   /**
@@ -47,7 +47,7 @@ addons.setConfig({
   /**
    * theme storybook, see link below
    */
-  theme: themes.dark,
+  theme: customTheme,
 
   /**
    * id to select an addon panel
