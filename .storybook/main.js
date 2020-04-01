@@ -7,6 +7,7 @@ module.exports = {
     "storybook-addon-i18next/register",
     "@storybook/addon-storysource",
     "@storybook/addon-viewport",
+    "@harelpls/storybook-addon-materialui",
     "@storybook/addon-links",
   ],
 };
