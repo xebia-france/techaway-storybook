@@ -1,6 +1,8 @@
 import React, { Suspense } from "react";
-import { withI18next } from "storybook-addon-i18next";
 import { addDecorator } from "@storybook/react";
+import { withI18next } from "storybook-addon-i18next";
+import { withMuiTheme } from "@harelpls/storybook-addon-materialui";
+import themes from "themes";
 import i18n from "i18n";
 import { languages } from "./utils";
 
@@ -18,3 +20,11 @@ addDecorator((story, context) => {
     return <span>{JSON.stringify(error)}</span>;
   }
 });
+
+addDecorator(
+  withMuiTheme({
+    Brownwave: themes.Brownwave,
+    Cralga: themes.Cralga,
+    None: null,
+  })
+);
