@@ -10,5 +10,6 @@ module.exports = {
     "@harelpls/storybook-addon-materialui",
     "@storybook/addon-links",
     "@storybook/addon-docs",
+    "@storybook/addon-a11y",
   ],
 };
