@@ -1,12 +1,15 @@
 import React from 'react';
 import { withKnobs, text } from '@storybook/addon-knobs';
-import { withDesign } from 'storybook-addon-designs';
+// import { withDesign } from 'storybook-addon-designs';
 import AuthorUnit from 'components/AuthorUnit';
 
 export default {
   title: 'React-App/components/AuthorUnit',
   component: AuthorUnit,
-  decorators: [withKnobs, withDesign],
+  decorators: [
+    withKnobs,
+    // withDesign // This is once issue again aboout StoryShots that sucks!
+  ],
   parameters: {
     design: {
       type: 'figma',

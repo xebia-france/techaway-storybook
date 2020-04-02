@@ -1,0 +1,422 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Material-UI/Button With Knobs 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Default
+  </span>
+</button>
+`;
+
+exports[`Storyshots Material-UI/Typography With Knobs 1`] = `
+Array [
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Your custom component
+  </p>,
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    A text under you custom component in order to see in action.
+  </p>,
+]
+`;
+
+exports[`Storyshots React-App/components/AuthorUnit With Knobs 1`] = `
+<div
+  className="MuiContainer-root MuiContainer-maxWidthSm"
+>
+  <h1
+    className="MuiTypography-root MuiTypography-h2 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-alignCenter"
+  >
+    Publicis Sapient Engineering
+  </h1>
+  <p
+    className="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextSecondary MuiTypography-paragraph MuiTypography-alignCenter"
+  >
+    Depuis près de trente ans, nous agissons pour la transformation digitale des entreprises. Nous utilisons le pouvoir de la technologie et de la créativité pour soutenir les ambitions de nos clients. Nous imaginons avec, et pour eux, de nouvelles expériences et anticipons les business clés de demain.
+  </p>
+  <div
+    className="makeStyles-authorButtons-1"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-justify-xs-center"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            see_twitter_profile
+          </span>
+        </button>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            see_linkedin_profile
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots React-App/components/CardArticle Default 1`] = `
+Array [
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+  >
+    <div
+      className="MuiPaper-root MuiCard-root makeStyles-card-207 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardMedia-root makeStyles-cardMedia-208"
+        style={
+          Object {
+            "backgroundImage": "url(\\"https://blog.engineering.publicissapient.fr/wp-content/uploads/2019/09/article-blog.jpg\\")",
+          }
+        }
+        title="image_alt_article_card"
+      />
+      <div
+        className="MuiCardContent-root makeStyles-cardContent-209"
+      >
+        <h2
+          className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+        >
+          Xebia devient Publicis Sapient Engineering
+        </h2>
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          Il y a un peu moins d’un an, Xebia rejoignait le groupe Publicis afin de renforcer Publicis Sapient, sa branche technologique.
+        </p>
+      </div>
+      <div
+        className="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            view_article
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>,
+  <button
+    onClick={[Function]}
+  >
+    Got to Author container to see CardArticle in a real context
+  </button>,
+]
+`;
+
+exports[`Storyshots React-App/components/CardArticle With Knobs 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+>
+  <div
+    className="MuiPaper-root MuiCard-root makeStyles-card-410 MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <div
+      className="MuiCardMedia-root makeStyles-cardMedia-411"
+      style={
+        Object {
+          "backgroundImage": "url(\\"http://placeimg.com/640/480/tech\\")",
+        }
+      }
+      title="image_alt_article_card"
+    />
+    <div
+      className="MuiCardContent-root makeStyles-cardContent-412"
+    >
+      <h2
+        className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+      >
+        Bla bli blou
+      </h2>
+      <p
+        className="MuiTypography-root MuiTypography-body1"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere nunc ut nunc tempor, nec vehicula nisi dapibus. Sed tincidunt lectus id condimentum eleifend.
+      </p>
+    </div>
+    <div
+      className="MuiCardActions-root MuiCardActions-spacing"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          view_article
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots React-App/components/Footer Default 1`] = `
+<footer
+  className="makeStyles-footer-613"
+>
+  <h6
+    className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom MuiTypography-alignCenter"
+  >
+    Publicis Sapient Engineering
+  </h6>
+  <p
+    className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary MuiTypography-alignCenter"
+  >
+    Engineering done right!
+  </p>
+</footer>
+`;
+
+exports[`Storyshots React-App/components/Header Default 1`] = `
+<div
+  className="makeStyles-root-644"
+>
+  <header
+    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4"
+  >
+    <div
+      className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+    >
+      <a
+        aria-disabled={false}
+        aria-label="open drawer"
+        className="MuiButtonBase-root MuiIconButton-root makeStyles-menuButton-645 MuiIconButton-colorInherit MuiIconButton-edgeStart"
+        href="/"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+            />
+          </svg>
+        </span>
+      </a>
+      <h6
+        className="MuiTypography-root makeStyles-title-646 MuiTypography-h6 MuiTypography-noWrap"
+      >
+        header_title
+      </h6>
+      <div>
+        <div
+          className="MuiFormControl-root makeStyles-formControl-741"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+            data-shrink={true}
+            id="toggle-theme-select-label"
+          >
+            theme
+          </label>
+          <div
+            className="MuiInputBase-root MuiInput-root MuiInput-underline makeStyles-select-742 MuiInputBase-formControl MuiInput-formControl"
+            onClick={[Function]}
+          >
+            <div
+              aria-haspopup="listbox"
+              aria-labelledby="toggle-theme-select-label toggle-theme-select"
+              className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+              id="toggle-theme-select"
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Cralga
+            </div>
+            <input
+              onAnimationStart={[Function]}
+              type="hidden"
+              value="Cralga"
+            />
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root MuiSelect-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 10l5 5 5-5z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`Storyshots React-App/components/SelectTheme Default 1`] = `
+<div
+  className="MuiFormControl-root makeStyles-formControl-813"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+    data-shrink={true}
+    id="toggle-theme-select-label"
+  >
+    theme
+  </label>
+  <div
+    className="MuiInputBase-root MuiInput-root MuiInput-underline makeStyles-select-814 MuiInputBase-formControl MuiInput-formControl"
+    onClick={[Function]}
+  >
+    <div
+      aria-haspopup="listbox"
+      aria-labelledby="toggle-theme-select-label toggle-theme-select"
+      className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+      id="toggle-theme-select"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Cralga
+    </div>
+    <input
+      onAnimationStart={[Function]}
+      type="hidden"
+      value="Cralga"
+    />
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root MuiSelect-icon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7 10l5 5 5-5z"
+      />
+    </svg>
+  </div>
+</div>
+`;

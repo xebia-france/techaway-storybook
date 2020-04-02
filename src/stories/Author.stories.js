@@ -6,6 +6,9 @@ import Author from 'containers/Author';
 export default {
   title: 'React-App/containers/Author',
   component: Author,
+  parameters: {
+    storyshots: { disable: true },
+  },
 };
 
 const renderWithRouter = (Component, paramId) => (

@@ -6,6 +6,9 @@ export default {
   title: 'React-App/containers/Home',
   component: Home,
   decorators: [StoryRouter()],
+  parameters: {
+    storyshots: { disable: true },
+  },
 };
 
 export const Default = () => <Home />;
