@@ -1,11 +1,19 @@
 import React from 'react';
 import { withKnobs, text } from '@storybook/addon-knobs';
+import { withDesign } from 'storybook-addon-designs';
 import AuthorUnit from 'components/AuthorUnit';
 
 export default {
   title: 'React-App/components/AuthorUnit',
   component: AuthorUnit,
-  decorators: [withKnobs],
+  decorators: [withKnobs, withDesign],
+  parameters: {
+    design: {
+      type: 'figma',
+      url:
+        'https://www.figma.com/file/hGnZzjJ7Un7ClbRMywK7N8/TechAway-Storybook?node-id=2%3A3',
+    },
+  },
 };
 
 const props = {
