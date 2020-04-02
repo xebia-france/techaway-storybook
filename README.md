@@ -55,11 +55,27 @@ You could instead run the commands above concurrently by running:
 yarn prod
 ```
 
-### Test
+### Unit Tests
 
 ```sh
 yarn test
 ```
+
+### Visual Regression Tests
+
+Be sure you created a `.env` file with:
+
+```dotenv
+CHROMATIC_APP_CODE=xxxxxxxx
+```
+
+Then you can run:
+
+```sh
+yarn chromatic
+```
+
+The result is visible [here](https://www.chromaticqa.com/builds?appId=5e861c3506f1710022e42e0c).
 
 ## Resources
 
