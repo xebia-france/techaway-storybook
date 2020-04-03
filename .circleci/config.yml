@@ -47,7 +47,13 @@ jobs:
                 path: coverage
             - run:
                 name: "Visual Regression tests"
-                command: yarn chromatic
+                command: |
+                  if [ "${CIRCLE_BRANCH}" != "master" ];
+                  then
+                    yarn chromatic
+                  else
+                    yarn chromatic --auto-accept-changes
+                  fi
 workflows:
   build-and-test:
     jobs:
