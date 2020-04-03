@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="1" failures="0" time="2.29">
+  <testsuite name="CardArticle stories" errors="0" failures="0" skipped="0" timestamp="2020-04-03T12:37:48" time="1.274" tests="1">
+    <testcase classname="CardArticle stories should handle clicking read button" name="CardArticle stories should handle clicking read button" time="0.093">
+    </testcase>
+  </testsuite>
+</testsuites>

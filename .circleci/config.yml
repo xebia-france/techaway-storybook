@@ -1,0 +1,54 @@
+version: 2.1
+orbs:
+  node: circleci/node@1.1.6
+jobs:
+  build-and-test:
+    executor:
+      name: node/default
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            # Download and cache dependencies
+            - restore_cache:
+                name: Restore Yarn Package Cache
+                keys:
+                  - yarn-packages-{{ checksum "yarn.lock" }}
+            - run:
+                name: Install Dependencies
+                command: yarn install
+            - save_cache:
+                name: Save Yarn Package Cache
+                paths:
+                  - node_modules
+                  - ~/.cache/yarn
+                key: yarn-packages-{{ checksum "yarn.lock" }}
+            # Build
+            - run:
+                name: Build Application
+                command: yarn build
+            - run:
+                name: Build Storybook
+                command: yarn build-storybook
+            # Unit tests
+            - run:
+                name: "Unit tests and coverage"
+                command: yarn test:ci
+                environment:
+                  JEST_JUNIT_OUTPUT_DIR: "reports/junit/js-test-results.xml"
+            - store_test_results:
+                path: reports/junit
+            - store_artifacts:
+                name: "Store tests report"
+                path: reports/junit
+            - store_artifacts:
+                name: "Store coverage report"
+                path: coverage
+            - run:
+                name: "Visual Regression tests"
+                command: yarn chromatic
+workflows:
+  build-and-test:
+    jobs:
+      - build-and-test
