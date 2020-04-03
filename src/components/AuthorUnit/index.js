@@ -31,20 +31,18 @@ const AuthorUnit = ({ name, description, twitter, linkedin }) => {
         <Grid container spacing={2} justify="center">
           <Grid item>
             <Button
-              variant="contained"
+              variant="outlined"
               color="primary"
               onClick={handleClick(twitter)}
-              size="small"
             >
               {t('see_twitter_profile')}
             </Button>
           </Grid>
           <Grid item>
             <Button
-              variant="contained"
+              variant="outlined"
               color="primary"
               onClick={handleClick(linkedin)}
-              size="small"
             >
               {t('see_linkedin_profile')}
             </Button>
