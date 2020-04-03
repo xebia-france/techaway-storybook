@@ -34,6 +34,7 @@ const AuthorUnit = ({ name, description, twitter, linkedin }) => {
               variant="contained"
               color="primary"
               onClick={handleClick(twitter)}
+              size="small"
             >
               {t('see_twitter_profile')}
             </Button>
@@ -43,6 +44,7 @@ const AuthorUnit = ({ name, description, twitter, linkedin }) => {
               variant="contained"
               color="primary"
               onClick={handleClick(linkedin)}
+              size="small"
             >
               {t('see_linkedin_profile')}
             </Button>
