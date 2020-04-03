@@ -7,8 +7,9 @@ import Typography from '@material-ui/core/Typography';
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
-import useStyles from './styles';
 import Grid from '@material-ui/core/Grid';
+import useStyles from './styles';
+import clsx from 'clsx';
 
 const CardArticle = ({ title, description, url, image }) => {
   const classes = useStyles();
@@ -22,7 +23,7 @@ const CardArticle = ({ title, description, url, image }) => {
     <Grid item xs={12} sm={6} md={4}>
       <Card className={classes.card}>
         <CardMedia
-          className={classes.cardMedia}
+          className={clsx(classes.cardMedia, 'chromatic-ignore')}
           image={image}
           title={t('image_alt_article_card', { title })}
         />
