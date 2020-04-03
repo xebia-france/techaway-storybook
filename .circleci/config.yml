@@ -50,7 +50,7 @@ jobs:
                 command: |
                   if [ "${CIRCLE_BRANCH}" != "master" ];
                   then
-                    yarn chromatic
+                    yarn chromatic --exit-zero-on-changes
                   else
                     yarn chromatic --auto-accept-changes
                   fi
