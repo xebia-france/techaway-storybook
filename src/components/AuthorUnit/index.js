@@ -40,7 +40,7 @@ const AuthorUnit = ({ name, description, twitter, linkedin }) => {
           </Grid>
           <Grid item>
             <Button
-              variant="outlined"
+              variant="contained"
               color="primary"
               onClick={handleClick(linkedin)}
             >
